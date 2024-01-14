@@ -30,7 +30,7 @@ public class MemberService {
 
     // 메서드로 뽑는게 좋다. 컨트롤 + alt + M (리팩토링 관련)
     private void validateDuplicateMember(Member member) {
-        memberRepository.findByname(member.getName())
+        memberRepository.findByName(member.getName())
                 .ifPresent(m -> {
                     throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });
