@@ -29,6 +29,13 @@ public class SpringConfig {
     }
 
 /*
+    직접 빈을 등록가능하지만 @Component 를 사용해서 주석처리
+    @Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
+}*/
+
+/*
     @Bean
     public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
